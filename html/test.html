@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Website Author: Nigel Brown-Ward-->
+<html>
+<head>
+<link rel="stylesheet" href="styles/home.css" >
+
+<meta charset="utf-8" lang="en">
+<title> Nneka Gigi </title>
+<!-- This is the javascript functions for the carousel using the jquery lib-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	$('a > div').hover(function(){
+		$(this).addClass('tab');
+		$('#products').addClass('hide');
+		$('.dropdown').addClass('dropdownshow');
+	},function(){
+		$('#products').removeClass('hide');
+		$(this).removeClass('tab');
+		$('.dropdown').removeClass('dropdownshow');
+	
+	});
+	
+});
+
+
+</script>
+
+</head>
+
+<body>
+<div>
+<h1  id="logo"><img src="images/nnekalogo.png" width="700px" height="100px" alt="Nneka Gigi: My Vision, Your Body"></h1>
+</div>
+<div class="navbar">
+
+
+<a  href="home.html"><div style="width:140px;text-align:center; height:45px; ">HOME</div></a>
+<a  href="shop.html"><div style="width:100px; height:45px; ">SHOP</div></a>
+<a  href="customorderform.html"><div style="width:150px; height:45px; ">CUSTOM ORDERS</div></a>
+<a  href="cosmeticsline.html"><div style="width:130px; height:45px; ">COSMETICS</div></a>
+<a  href="about.html"><div style="width:130px; height:45px;">ABOUT NNEKA</div></a>
+<a  href="blog.html"><div style="width:90px; height:45px; ">BLOG</div></a>
+<a  href="contactform.html"><div style="width:150px; height:45px; ">CONTACT NNEKA </div></a>
+
+</div>
+<div class="dropdown">
+
+
+</div>
+<div id="products">
+<ul style=" list-style:none; float:right">
+	<li style=" padding-right: 5px;padding-bottom:10px; float:left"> 
+		<figure style="padding-bottom:10px; color:#ffffff">
+			<img src="images/Baciami.jpg" width="250px" height="250px" alt="">
+				<figcaption style="font-size:18px; color:#ffffff;text-align:center"> $35.00 <input type="button" name="Buy" value="Buy" onclick="orderInfo()" /></figcaption>
+		</figure>
+	</li>
+
+	<li style="padding-left: 5px;padding-bottom:10px; padding-top:1px"> 
+		<figure style="padding-bottom:10px">
+			<img src="images/DVMN_U.jpg" width="250px" height="250px" alt="">
+				<figcaption style="font-size:18px; color:#ffffff;text-align:center"> $165.00 <input type="button" name="Buy" value="Buy" onclick="orderInfo()" /></figcaption>
+		</figure>
+	</li>
+
+	<li style="padding-right:5px; float:left"> 
+		<figure>
+			<img src="images/MY_BEACH_BETTER.jpg" width="250px" height="250px" alt="">
+				<figcaption style="font-size:18px; color:#ffffff;text-align:center"> $90.00 <input type="button" name="Buy" value="Buy" onclick="orderInfo()" /></figcaption>
+		</figure>
+	</li>
+
+	<li> 
+		<figure>
+			<img src="images/GO_PLAY.jpg" width="250px" height="250px" alt="">
+				<figcaption style="font-size:18px; color:#ffffff;text-align:center"> $65.00 <input type="button" name="Buy" value="Buy" onclick="orderInfo()" /></figcaption>
+		</figure>
+	</li>
+</ul>
+</div>
+
+<div id="footer_menu">
+<div>
+<p class="font1">  &nbsp &nbsp &nbsp Customer Service </p>
+<ul class="font2">
+	<li>Order Status</li>
+	<li>Contact Nneka Gigi</li>
+	<li>Shipping Rates</li>
+	<li>Return Policy</li>
+</ul>
+</div>
+
+<div>
+<p class="font1">  &nbsp &nbsp &nbsp Follow Nneke Gigi </p>
+<ul class="font2">
+	<li>Facebook</li>
+	<li>Instagram</li>
+	<li>Pinterest</li>
+	<li>Twitter</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

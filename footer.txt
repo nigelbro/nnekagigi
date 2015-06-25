@@ -1,0 +1,60 @@
+<div id="footer_menu">
+<div>
+<p class="font1">  &nbsp &nbsp &nbsp Customer Service </p>
+<ul class="font2">
+	<li>Order Status</li>
+	<li>Contact Nneka Gigi</li>
+	<li>Shipping Rates/ Information</li>
+	<li>Return Policy</li>
+</ul>
+</div>
+
+<div>
+<p class="font1">  &nbsp &nbsp &nbsp Follow Nneke Gigi </p>
+<ul class="font2">
+	<li>Facebook</li>
+	<li>Instagram</li>
+	<li>Pinterest</li>
+	<li>Twitter</li>
+</ul>
+</div>
+
+</div>
+
+css
+
+
+#footer_menu {
+	
+
+color:#ffffff;
+width:100%;
+
+
+padding-top: 20px;
+}
+
+
+
+#footer_menu div{
+
+
+float:left
+}
+
+ul{
+list-style:none;
+
+}
+.font1{
+
+font-size:20px;
+font-face: sans-serif;
+
+
+}
+.font2{
+font-size: 16px;
+font-face: arial;
+
+}
