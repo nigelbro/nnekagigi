@@ -1,12 +1,24 @@
 <?php
-require_once "nnekagigiheader.php";
+
 echo<<<_END
+<script>
+$(document).ready(function(){
+	$('#myModal').modal('show');
+});
+</script>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
 
-<div class="container">
-<div class="row">
-
-<div style="background-image:url('images/biopic.jpg');height:800px;background-color:#f9f9f9;background-repeat:no-repeat;background-position:center"class="col-sm-12 col-md-12"></div>
-<div id="message">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">About NNEKA GIGI</h4>
+                </div>
+                <div class="modal-body">
+      <div class="row">
+      
+      
+      <div id="message">
 Nneka Gigi emerged in Western New York on the eastern shores 
 of Lake Erie in 2012, from custom hand carved and painted jewelry, 
 and soon evolved into a creative and artistic apparel line in 2013.
@@ -33,18 +45,11 @@ Unique and Irreplicable.
 Rather than follow a trend, stand out by becoming one with 
 Nneka Gigi"</p>
 </div>
-
-
-</div>
-
-
-</div>
-
-
-
-
+      </div>
+      </div>  
+    </div>
+  </div>
+  </div>
 
 _END;
-
-require_once "nnekafooter.php";
 ?>

@@ -121,7 +121,7 @@ echo<<<_END
       </tbody>
     </table>
     </div>
-    <div style="font-size:30px; position:relative;width:100%">
+    <div style="font-size:30px; position:relative;width:100%;text-align:right">
 _END;
 echo" <p>Order Total: <strong>&#36;". sprintf('%.2f', $total) . "</strong></p>";
 

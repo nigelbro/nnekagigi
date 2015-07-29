@@ -18,9 +18,10 @@ if(isset($_SESSION['SESSION_LOGGEDIN']) == TRUE)
 	$username= $_SESSION['SESSION_USERNAME'];
 echo<<<_END
 <!-- Website Author: Nigel Brown-Ward-->
-<html>
+<html ng-app="store">
 <head>
 <link rel="stylesheet" href="styles/featureditems.css" >
+<link rel="stylesheet" href="styles/nnekaabout.css">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,16 +39,14 @@ echo<<<_END
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery/shoppingdropdownmenu.js"></script>
 <script src="perfectscrollbar/src/perfect-scrollbar.js"></script>
+
 <link href="perfectscrollbar/src/perfect-scrollbar.css" rel="stylesheet">
-<script>
-$(document).ready(function () {
-       "use strict";
-       $('#suppressscrollX').perfectScrollbar({suppressScrollX: true});
- });
-</script>
+
 <script>
 $(document).ready(function(){
+	
 $('form > a:contains(LOGIN)').on('click', function(){
+	
 if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -76,6 +75,8 @@ if (window.XMLHttpRequest) {
 <body 
 style="background-color:#A0A0A0
 ">
+<script src="jquery/angular.min.js"></script>
+<script src="jquery/app.js"></script>
 <div class="container-fluid">
 
 <div class="row">
@@ -176,9 +177,10 @@ _END;
 
 echo<<<_END
 <!-- Website Author: Nigel Brown-Ward-->
-<html>
+<html ng-app="store">
 <head>
 <link rel="stylesheet" href="styles/featureditems.css" >
+<link rel="stylesheet" href="styles/nnekaabout.css">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -197,15 +199,11 @@ echo<<<_END
 <script src="jquery/shoppingdropdownmenu.js"></script>
 <script src="perfectscrollbar/src/perfect-scrollbar.js"></script>
 <link href="perfectscrollbar/src/perfect-scrollbar.css" rel="stylesheet">
-<script>
-$(document).ready(function () {
-       "use strict";
-       $('#suppressscrollX').perfectScrollbar({suppressScrollX: true});
- });
-</script>
+
 <script>
 $(document).ready(function(){
 $('form > a:contains(LOGIN)').on('click', function(){
+	
 if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -234,6 +232,8 @@ if (window.XMLHttpRequest) {
 <body 
 style="background-color:#A0A0A0
 ">
+<script src="jquery/angular.min.js"></script>
+<script src="jquery/app.js"></script>
 <div class="container-fluid">
 
 <div class="row">

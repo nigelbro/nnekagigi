@@ -109,10 +109,9 @@ echo<<<_END
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="jquery/setUpModalItem.js"></script>
-</body>
-</html>
+
+
+
 _END;
+require_once "nnekafooter.php";
 ?>
