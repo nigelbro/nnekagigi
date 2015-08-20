@@ -9,16 +9,13 @@ if (isset($_POST['username']) && isset($_POST['submit']))
   {
     $username = sanitizeString($_POST['username']);
     $pass = sanitizeString($_POST['password']);
-    $salt1 = "Qk$%!";
-    $salt2 = "LHv;)^32!";
-    $token = hash('ripemd128', "$salt1$pass$salt2");
     if ($username == "" || $pass == ""){
         $error = "Not all fields were entered<br>";
     }else
     {
 
       $result = queryMySQL("SELECT * FROM logins
-        WHERE username='$username' AND password='$token'");
+        WHERE username='$username' ");
 
       if ($result->num_rows == 0)
       {
@@ -28,6 +25,8 @@ if (isset($_POST['username']) && isset($_POST['submit']))
       }
       else
       {
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+        if (password_verify($pass,$row["password"])){
 
         
         
@@ -41,7 +40,14 @@ if (isset($_POST['username']) && isset($_POST['submit']))
        
               $_SESSION['SESSION_ORDERNUMBER'] = $orderrow['id'];
               header("Location: featureditems.php");
-        
+        }else{
+          
+          $error = "<span class='error'>Username/Password
+                  invalid</span><br><br>";
+        echo $error;
+          
+        }
+        }
       }
     }
 }
