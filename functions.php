@@ -1,7 +1,7 @@
 <?php // Example 26-1: functions.php
 
-$db_hostname = 'localhost';
-$db_database = 'nnekagigi';
+$db_hostname = '';
+$db_database = '';
 $db_username = 'root';
 $db_password = '';
 $connection = new mysqli($db_hostname, $db_username,$db_password , $db_database );
