@@ -10,9 +10,7 @@ session_start();
   {
    $username = sanitizeString($_POST['username']);
     $pass = sanitizeString($_POST['password']);
-    $salt1 = "Qk$%!";
-    $salt2 = "LHv;)^32!";
-    $token = hash('ripemd128', "$salt1$pass$salt2");
+    $token = password_hash($pass,PASSWORD_DEFAULT);
     if ($username == "" || $pass == ""){
       $error = "Not all fields were entered<br><br>";
   	}
