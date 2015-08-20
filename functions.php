@@ -75,10 +75,11 @@ echo<<<_END
 <div class="container-fluid" >
 <div class="row">
 
-<div class="col-md-8"style="background-color:#E0E0E0;margin-left:17%">
-<p><a href='shop.php'>Continue Shopping</a></p>
-<table style="position:relative;top:40px;width:100%">
-<tbody style="background-color:#ffffff;">
+<div  class="col-md-8"style="background-color:#E0E0E0;margin-left:17%">
+<p><a href='/shop'>Continue Shopping</a></p>
+<table  class="table table-default"style="background-color:#ffffff">
+
+<thead style="display:block;background-color:#ffffff;">
         <tr>
           <th style="width:340px"></th>
           <th style="width:280px">Product</th>
@@ -87,28 +88,24 @@ echo<<<_END
           <th style="width:190px">Price</th>
           <th>Total</th>
         </tr>
-      </body>
-      </table>
-<div id="suppressscrollX"style="overflow:hidden;position:relative;height:400px;">
-<table  class="table table-default"style="background-color:#ffffff">
-      
-      <tbody style="background-color:#A0A0A0">
+      </thead>
+      <tbody id="suppressscrollX"style="overflow:hidden;position:relative;height:300px;display:block;background-color:#A0A0A0">
 _END;
-        
+
 while($itemrows = mysqli_fetch_array($get_customer_items,MYSQLI_ASSOC)){
 
             $quantitytotal = $itemrows['product_price'] * $itemrows['quantity'];
             echo "<tr>";
             if(empty($itemrows['product_image'])) {
-            echo "<td><img src='' width='100px'  height='100px'alt='" . $itemrows['product_name'] . "'></td>";
+            echo "<td style='width:340px'><img src='' width='100px'  height='100px'alt='" . $itemrows['product_name'] . "'></td>";
             }
             else {
-            echo "<td><img src='" .$itemrows['product_image'] . "' width='100px' height='100px' alt='". $itemrows['product_name'] . "'></td>";
+            echo "<td  style='width:340px'><img src='" .$itemrows['product_image'] . "' width='100px' height='100px' alt='". $itemrows['product_name'] . "'></td>";
             }
-            echo "<td>" . $itemrows['product_name'] . "</td>";
-            echo "<td>" . $itemrows['quantity'] . "</td>";
-            echo "<td>[<a href='delete.php?id=". $itemrows['itemid'] . "'>X</a>]</td>";
-            echo "<td><strong>&#36;" . sprintf('%.2f', $itemrows['product_price']) . "</strong></td>";
+            echo "<td style='width:280px'>" . $itemrows['product_name'] . "</td>";
+            echo "<td style='width:90px'>" . $itemrows['quantity'] . "</td>";
+            echo "<td style='width:130px'>[<a href='delete.php?id=". $itemrows['itemid'] . "'>X</a>]</td>";
+            echo "<td style='width:190px'><strong>&#36;" . sprintf('%.2f', $itemrows['product_price']) . "</strong></td>";
             echo "<td><strong>&#36;". sprintf('%.2f', $quantitytotal) . "</strong></td>";
             echo "</tr>";
 
@@ -120,21 +117,20 @@ while($itemrows = mysqli_fetch_array($get_customer_items,MYSQLI_ASSOC)){
 echo<<<_END
       </tbody>
     </table>
-    </div>
     <div style="font-size:30px; position:relative;width:100%;text-align:right">
 _END;
 echo" <p>Order Total: <strong>&#36;". sprintf('%.2f', $total) . "</strong></p>";
 
 echo <<<_END
     </div>
-  
-    
+
+
 _END;
-  
-  
-      
+
+
+
       echo<<<_END
-      
+
 </div>
 </div>
 </div>
@@ -143,11 +139,12 @@ _END;
 
 _END;
 
-            
-          
 
-         
+
+
+
         }
 
 }
+
 ?>

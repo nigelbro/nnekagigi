@@ -70,13 +70,26 @@ if (window.XMLHttpRequest) {
 
 
 </script>
+<script>
+
+$(document).ready(function () {
+
+
+"use strict";
+
+ $('#suppressscrollX').perfectScrollbar({suppressScrollX: true});
+$('#suppressscrollY').perfectScrollbar({suppressScrollY: true});
+
+});
+
+ </script>
+
 </head>
 
 <body 
 style="background-color:#A0A0A0
 ">
-<script src="jquery/angular.min.js"></script>
-<script src="jquery/app.js"></script>
+
 <div class="container-fluid">
 
 <div class="row">
@@ -87,7 +100,7 @@ style="background-color:#A0A0A0
 </div>
 
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     
@@ -98,7 +111,7 @@ style="background-color:#A0A0A0
     
       <ul class="nav nav-tabs" >
         <li><a  href="featureditems.php">HOME</a></li>
-        <li><a  href="shop.php">SHOP</a></li>
+        <li><a  href="shopwomens.php">SHOP</a></li>
         <li><a  href="customorderform.php">CUSTOM ORDERS</a></li>
         <li><a  href="cosmeticsline.php">COSMETICS</a></li>
         <li><a  href="nnekaabout.php">ABOUT NNEKA</a></li>
@@ -108,7 +121,7 @@ style="background-color:#A0A0A0
 		
 
       <form class="navbar-form navbar-right" role="search">
-	  		<p>Logged in as <strong>$username</strong> <a href="logout.php">Sign Out</a></p>
+	  		<p style="font-size:20px;color:#ffffff">Logged in as <strong>$username</strong> <a style="font-size:20px;color:#ffffff" href="logout.php">Sign Out</a></p>
 	        <div class="form-group">
 	        
 	          <input type="text" class="form-control" placeholder="Search">
@@ -147,7 +160,7 @@ style="background-color:#A0A0A0
 
 		<div class="col-sm-3 col-md-3" style="text-align:left">
 			<ul class="font2">
-				<li><a href="shopwomens.html"><p class="font1">WOMENS</p></a></li>
+				<li><a href="shopwomens.php"><p class="font1">WOMENS</p></a></li>
 				<li><a href="womensweaters.html">SWEATERS/T-SHIRTS</a></li>
 				<li><a href="womensjeans.html">JEANS/PANTS</a></li>
 				<li><a href="womenscosmetics.html">COSMETICS</a></li>
@@ -227,13 +240,26 @@ if (window.XMLHttpRequest) {
 
 
 </script>
+<script>
+
+$(document).ready(function () {
+
+
+"use strict";
+
+ $('#suppressscrollX').perfectScrollbar({suppressScrollX: true});
+$('#suppressscrollY').perfectScrollbar({suppressScrollY: true});
+
+});
+
+ </script>
+
 </head>
 
 <body 
 style="background-color:#A0A0A0
 ">
-<script src="jquery/angular.min.js"></script>
-<script src="jquery/app.js"></script>
+
 <div class="container-fluid">
 
 <div class="row">
@@ -244,7 +270,7 @@ style="background-color:#A0A0A0
 </div>
 
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     
@@ -255,7 +281,7 @@ style="background-color:#A0A0A0
     
       <ul class="nav nav-tabs" >
         <li><a  href="featureditems.php">HOME</a></li>
-        <li><a  href="shop.php">SHOP</a></li>
+        <li><a  href="shopwomens.php">SHOP</a></li>
         <li><a  href="customorderform.php">CUSTOM ORDERS</a></li>
         <li><a  href="cosmeticsline.php">COSMETICS</a></li>
         <li><a  href="nnekaabout.php">ABOUT NNEKA</a></li>
@@ -301,7 +327,7 @@ style="background-color:#A0A0A0
 
 		<div class="col-sm-3 col-md-3" style="text-align:left">
 			<ul class="font2">
-				<li><a href="shopwomens.html"><p class="font1">WOMENS</p></a></li>
+				<li><a href="shopwomens.php"><p class="font1">WOMENS</p></a></li>
 				<li><a href="womensweaters.html">SWEATERS/T-SHIRTS</a></li>
 				<li><a href="womensjeans.html">JEANS/PANTS</a></li>
 				<li><a href="womenscosmetics.html">COSMETICS</a></li>

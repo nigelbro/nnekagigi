@@ -4,5 +4,5 @@ require_once "functions.php";
 
 showCart();
 
-
+require_once "nnekafooter.php";
 ?>
